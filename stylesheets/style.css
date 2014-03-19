@@ -21,4 +21,7 @@ body{
   top:45%;
   width: 100%;
   text-align: center;
+  padding-bottom: 21px;
 }
+.info a{color: #000000;}
+.info a:hover{color: blue;}
