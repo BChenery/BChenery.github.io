@@ -21,10 +21,11 @@ body, html {
 .slide img {
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
+    object-fit: none; /* Removes aspect ratio preservation */
+    object-position: center; /* Centers the image */
 }
 
 .prev, .next {
@@ -80,7 +81,7 @@ body, html {
 }
 
 .fade {
-    animation: fade 1.5s;
+    animation: fade 3s;
 }
 
 @keyframes fade {
