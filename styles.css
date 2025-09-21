@@ -5,25 +5,26 @@ body, html {
     width: 100vw;
     overflow: hidden;
 }
-
 .slideshow-container {
     position: relative;
     width: 100vw;
     height: 100vh;
 }
-
 .slide {
     display: none;
     width: 100vw;
     height: 100vh;
+    position: relative;
+}
+.slide img {
+    width: 100vw !important;
+    height: 100vh !important;
     position: absolute;
     top: 0;
     left: 0;
-    background-size: 100% 100%; /* Stretches/resizes image to exactly fill viewport */
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover; /* Changed from 'none' to 'cover' - this will scale and crop to fill the viewport */
+    display: block; /* Removes extra spacing */
 }
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -37,20 +38,16 @@ body, html {
     user-select: none;
     z-index: 10;
 }
-
 .prev {
     left: 10px;
 }
-
 .next {
     right: 10px;
 }
-
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 50%;
 }
-
 .email-container {
     position: absolute;
     bottom: 20px;
@@ -62,11 +59,9 @@ body, html {
     transition: transform 0.3s ease;
     z-index: 10;
 }
-
 .email-container:hover {
     transform: scale(1.05);
 }
-
 .email {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -75,11 +70,9 @@ body, html {
     text-align: right;
     letter-spacing: 0.5px;
 }
-
 .fade {
     animation: fade 1.5s;
 }
-
 @keyframes fade {
     from {opacity: 0.4}
     to {opacity: 1}
