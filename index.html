@@ -39,14 +39,13 @@
         }
 
         .slide img {
-            height: 600px; /* TEST: Should show 600px height */
-            width: auto;
+            width: 100vw;
+            height: 100vh;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 0;
+            left: 0;
+            object-fit: fill;
             display: block;
-            border: 5px solid red; /* RED BORDER to confirm CSS is working */
         }
 
         .prev, .next {
