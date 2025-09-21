@@ -20,13 +20,13 @@ body, html {
 }
 
 .slide img {
-    width: 100vw;
-    height: 100vh;
+    width: 100vw !important;
+    height: 100vh !important;
     position: absolute;
     top: 0;
     left: 0;
-    /* Explicitly stretch image to fill viewport, ignoring aspect ratio */
-    object-fit: fill;
+    object-fit: fill; /* Stretches image to fill viewport, ignoring aspect ratio */
+    display: block; /* Ensures no extra spacing */
 }
 
 .prev, .next {
