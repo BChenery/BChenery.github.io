@@ -25,8 +25,9 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: fill; /* Stretches image to fill viewport, ignoring aspect ratio */
-    display: block; /* Ensures no extra spacing */
+    object-fit: none; /* Disables aspect ratio preservation */
+    transform: scale(1); /* Ensures no scaling issues */
+    display: block; /* Removes extra spacing */
 }
 
 .prev, .next {
