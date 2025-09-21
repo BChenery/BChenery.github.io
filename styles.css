@@ -22,7 +22,7 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover; /* Changed from 'none' to 'cover' - this will scale and crop to fill the viewport */
+    object-fit: fill; /* Stretches image to fill entire viewport, ignoring aspect ratio */
     display: block; /* Removes extra spacing */
 }
 .prev, .next {
