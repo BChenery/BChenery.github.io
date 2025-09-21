@@ -16,6 +16,7 @@ body, html {
     display: none;
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 
 .slide img {
@@ -24,8 +25,8 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: none; /* Removes aspect ratio preservation */
-    object-position: center; /* Centers the image */
+    /* Explicitly stretch image to fill viewport, ignoring aspect ratio */
+    object-fit: fill;
 }
 
 .prev, .next {
@@ -81,7 +82,7 @@ body, html {
 }
 
 .fade {
-    animation: fade 3s;
+    animation: fade 1.5s;
 }
 
 @keyframes fade {
