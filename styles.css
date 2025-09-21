@@ -16,18 +16,12 @@ body, html {
     display: none;
     width: 100vw;
     height: 100vh;
-    position: relative;
-}
-
-.slide img {
-    width: 100vw !important;
-    height: 100vh !important;
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: none; /* Disables aspect ratio preservation */
-    transform: scale(1); /* Ensures no scaling issues */
-    display: block; /* Removes extra spacing */
+    background-size: 100% 100%; /* Stretches/resizes image to exactly fill viewport */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .prev, .next {
